@@ -5,37 +5,64 @@ describe "Static pages" do
   describe "Home page" do
     
     it "should have the h1 'Yogkala'" do
+<<<<<<< HEAD
      visit '/static_pages/home'
+=======
+     visit '/static_pages/root_path'
+>>>>>>> filling-in-layout
      page.should have_selector('h1', :text => 'Yogkala')
     end
 
     it "should have the base title" do
+<<<<<<< HEAD
       visit '/static_pages/home'
+=======
+      visit '/static_pages/root_path'
+>>>>>>> filling-in-layout
       page.should have_selector('title', :text => "Yogkala")
     end
 
     it "should not have a custom page title" do
+<<<<<<< HEAD
       visit '/static_pages/home'
+=======
+      visit '/static_pages/root_path'
+>>>>>>> filling-in-layout
       page.should_not have_selector('title', :text => '| Home')
     end
   end
 
+<<<<<<< HEAD
   it "should have the h1 'About'" do
       visit '/static_pages/about'
+=======
+  describe "About page" do
+    it "should have the h1 'About'" do
+      visit '/static_pages/about_path'
+>>>>>>> filling-in-layout
       page.should have_selector('h1', :text => 'About')
     end
 
     it "should have the base title" do
+<<<<<<< HEAD
       visit '/static_pages/about'
+=======
+      visit '/static_pages/about_path'
+>>>>>>> filling-in-layout
       page.should have_selector('title', :text => "Yogkala")
     end
 
     it "should not have a custom page title" do
+<<<<<<< HEAD
       visit '/static_pages/about'
+=======
+      visit '/static_pages/about_path'
+>>>>>>> filling-in-layout
       page.should_not have_selector('title', :text => '| About')
     end
   end
 
+<<<<<<< HEAD
   it "should have the h1 'Contact'" do
       visit '/static_pages/contact'
       page.should have_selector('h1', :text => 'Contact')
@@ -49,22 +76,53 @@ describe "Static pages" do
     it "should not have a custom page title" do
       visit '/static_pages/contact'
       page.should_not have_selector('title', :text => '| Contact')
+=======
+  describe "Contact page" do
+     it "should have the h1 'Contact'" do
+      visit '/static_pages/contact_path'
+      page.should have_selector('h1', :text => 'Contact')
+>>>>>>> filling-in-layout
     end
-  end
 
+<<<<<<< HEAD
  it "should have the h1 'Help'" do
       visit '/static_pages/help'
-      page.should have_selector('h1', :text => 'Help')
-    end
-
+=======
     it "should have the base title" do
-      visit '/static_pages/help'
+      visit '/static_pages/contact_path'
       page.should have_selector('title', :text => "Yogkala")
     end
 
     it "should not have a custom page title" do
+      visit '/static_pages/contact_path'
+      page.should_not have_selector('title', :text => '| Contact')
+    end
+   end
+
+   describe "Help page" do
+    it "should have the h1 'Help'" do
+      visit '/static_pages/help_path'
+>>>>>>> filling-in-layout
+      page.should have_selector('h1', :text => 'Help')
+    end
+
+    it "should have the base title" do
+<<<<<<< HEAD
       visit '/static_pages/help'
+=======
+      visit '/static_pages/help_path'
+>>>>>>> filling-in-layout
+      page.should have_selector('title', :text => "Yogkala")
+    end
+
+    it "should not have a custom page title" do
+<<<<<<< HEAD
+      visit '/static_pages/help'
+=======
+      visit '/static_pages/help_path'
+>>>>>>> filling-in-layout
       page.should_not have_selector('title', :text => '| Help')
     end
   end
+
 end
