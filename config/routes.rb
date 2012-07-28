@@ -1,11 +1,11 @@
 Yogkala::Application.routes.draw do
-  get "static_pages/home"
+  get "static_pages/root_path"
 
-  get "static_pages/about"
+  get "static_pages/about_path"
 
-  get "static_pages/contact"
+  get "static_pages/contact_path"
 
-  get "static_pages/help"
+  get "static_pages/help_path"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
