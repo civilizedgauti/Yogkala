@@ -7,6 +7,8 @@ Yogkala::Application.routes.draw do
 
   get "static_pages/help_path"
 
+  get "static_pages/corporate_path"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

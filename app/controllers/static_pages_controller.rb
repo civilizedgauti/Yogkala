@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def help
   end
+
+  def corporate
+  end
 end

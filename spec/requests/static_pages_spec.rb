@@ -54,6 +54,24 @@ describe "Static pages" do
     end
    end
 
+   describe "Corporate page" do
+    
+    it "should have the h1 'Corporate Training'" do
+     visit '/static_pages/corporate_path'
+     page.should have_selector('h1', :text => 'Corporate Training')
+    end
+
+    it "should have the base title" do
+      visit '/static_pages/corporate_path'
+      page.should have_selector('title', :text => "Yogkala")
+    end
+
+    it "should not have a custom page title" do
+      visit '/static_pages/corporate_path'
+      page.should_not have_selector('title', :text => '| Corporate Training')
+    end
+  end
+
    describe "Help page" do
     it "should have the h1 'Help'" do
       visit '/static_pages/help_path'
